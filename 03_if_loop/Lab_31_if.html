@@ -57,7 +57,15 @@ $(document).ready(function () {
 
         // 請完成猜數字遊戲的程式, 參考答案附於稍後
         // 使用者輸入數字後，提示他(她)應該高一點或低一點
-
+        if (userKeyin>answer){
+            prompt = "請再低一點"
+        }
+        else if(userKeyin<answer){
+            prompt = "請再高一點"
+        }
+        else{
+            prompt = "恭喜你答對了"
+        }
 
 
         report.innerHTML += prompt + "<br>";
