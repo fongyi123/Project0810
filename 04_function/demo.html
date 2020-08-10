@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 練習１：
+    // function showStar() {
+    //     alert("*****");
+    // }
+
+    // showStar();
+
+    // ----------------彈性版範例(數量呼叫端決定)：
+    
+    // function showStar(count) {
+    //     let star = "";
+    //     for (let i = 1;i <=count; i++){
+    //         star += "*";
+    //     }
+    //     alert(star);
+    // }
+
+    // showStar(3);
+
+
+    // ----------------彈性版範例(二)：
+    // function showStar(count,what="*") {
+    //     let star = "";
+    //     for (let i = 1;i <=count; i++){
+    //         star += what;
+    //     }
+    //     alert(star);
+    // }
+
+    // showStar(3);
+
+    // showStar(-3);
+
+    // showStar(3,"^");
+
+    // 練習2：
+
+    // for (var i =1 ; i <=21; i++){
+    //     alert(i);
+        
+        
+    // }
+
+
+
+    //煩雜的方法
+    // function showStar(count){
+    //     if(count >= 1){
+    //         if (count <=21){
+    //             let star ="";
+    //             for (var i =1 ; i <=21; i++){
+    //                 star+="*";
+    //             }
+    //             alert(star);
+    //         }
+    //         else ()
+    //     }
+        
+
+    // alert(i);
+    // }
+    // show();
+
+
+
+
+    //清爽的方法
+    function showStar(count){
+        if(count <= 0){
+            alert("count >0 please，在大一點");
+            return;
+        }
+        if (count > 21){
+            alert("count <=21 please，在小一點");
+            return;
+        }
+        let star = "";
+        for(let i = 1; i <=count; i++){
+            star +="*";
+        }
+        
+        alert(star);
+    }
+    showStar(-12);
+    </script>
+
+
+
+</body>
+</html>
