@@ -19,7 +19,9 @@ obj.makeSound();
 "use strict";
 class CAnimal {
     constructor() {
-        this._weight = 0;
+        this._weight = 0;----A
+        this.weight = 0;----B
+
     }
     get weight() {
         return this._weight;
@@ -140,3 +142,53 @@ alert(obj.location);
 
 
 
+
+
+－－－－課堂老師寫法－－－－
+<script>
+    class CAnimal { makeSound(){
+            alert("Animal:....");
+        }
+        move(distance){
+            alert(distance)
+        }
+    }
+    let obj = new CAnimal();
+    obj.move(6);
+
+    class Dog extends CAnimal{
+        super.makeSound(){
+            alert("Animal:Wog:Wong! Wong!);
+
+        }
+    }
+
+    let obj = new Dog (3);
+    alert(obj.weight);
+    obj..makeSound();
+
+
+    class Dog extends CAnimal{
+        constructor (weightValue,locationName){
+            super(property)Dog.location:any
+            this.location = locationName;
+        }
+        makeSound(){
+            super.makeSound();
+            alert("Animal:Wog:Wong! Wong!);
+
+        }
+    }
+
+    let obj = new Dog (3);
+    alert(obj.weight);
+    obj..makeSound();
+
+
+
+
+
+
+
+
+</script>

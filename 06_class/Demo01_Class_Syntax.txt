@@ -17,10 +17,13 @@
 	obj.firstName = "Wolfgang";
 	obj.lastName = "Chien";
 	obj.sayHello = function () {
-		debug.innerHTML += "Hello! <br>";	
+		debug.innerHTML += "Hello! <br>";			
+        debug.innerHTML += `Hello! ${this.lastName} <br>`;----->this的方法，function掛在誰(哪個物件)身上，誰(哪個物件)就是this	
+
 	};
 
 	debug.innerHTML = obj.firstName + "<br>";
+    
 
 	obj.sayHello();
 

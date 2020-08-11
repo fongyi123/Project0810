@@ -24,9 +24,15 @@ test.onclick = function () {
     var data = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6];
 
     // 你的任務程式...
-    
+    // 方法一：
+    // var evenNumber = data .filter(function(x) {
+    //     return(x % 2 == 0);
+    // });
 
-    
+    // 方法二：
+    var evenNumber = data.filter(x => x % 2 ==0);
+
+    report.innerText = evenNumber.toString();
 
 
 }  // end of test.onclick

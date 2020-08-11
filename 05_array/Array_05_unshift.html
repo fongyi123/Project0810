@@ -21,16 +21,22 @@ test.onclick = function () {
     // 請寫程式，添加數字 3 到陣列的開頭處
 
     var data = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6];
-
+    // 在陣列最後一位新增一個數
     data[data.length] = 10;
     // 或者:
+
+    // 在陣列最後一位新增一個數
     // data.push(10)
 
-    data.pop();
+    // 刪除陣列最後一個數
+    // data.pop();
 
-    data.shift();
+    // 刪除陣列第一個數
+    // data.shift();
 
     // 你的任務程式...
+    // 在陣列開頭第一個數新增一個數
+    data.unshift(3);
 
     report.innerText = data.toString();
 

@@ -12,7 +12,49 @@
 
     <script>
 
+        // 寫法一
+        "use strick";
+        class CAnimal {
+            makeSound(){
+                alert("Animal....")
+            }
+        }
+        let obj = new CAnimal();
+        obj.makeSound();
 
+        // 寫法二
+        // class CAnimal {
+        //     makeSound() {
+        //         alert("Animal:....");
+        //     }
+        //     move(distance) {
+        //         alert(distance)
+        //     }
+        // }
+        // let obj = new CAnimal();
+        // obj.move(6);
+
+        //寫法三--constructor
+        "use strick";
+        class CAnimal{
+            constructor(){
+                // this._weight-->作法１
+                this.weight //作法２
+            }
+            get weight(){
+                return this._weight
+            }
+            set weight(value){
+                if (value>0){
+                    this.weight = value;
+                }
+            }
+            makeSound(){
+                alert("Animal:....")
+            }
+        }
+
+        
 
     </script>
 

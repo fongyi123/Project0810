@@ -25,7 +25,9 @@ test.onclick = function () {
 
     // 你的任務程式...
 
-    
+    var numbers = evenNumber.concat(oddNumber);
+    var numbers = [...evenNumber,...oddNumber];
+    report.innerText = numbers.toString();
 
 
 }  // end of test.onclick

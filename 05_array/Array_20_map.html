@@ -24,9 +24,14 @@ test.onclick = function () {
     var data = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6];
 
     // 你的任務程式...
-    
-    var dataList = [];
-    
+    //方法一：
+    // var dataList = [];
+    // var dataList = data.map(function(x){
+    //     return x += 10
+    // })
+
+    //方法二：
+    var dataList = data.map(x => x+=10)
 
     report.innerText = dataList.toString();
 
