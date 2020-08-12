@@ -47,6 +47,8 @@
         
         for (i = 1; i < upperValue; i++) {
             result = result + i;
+            if (result==45) debugger;
+            //有條件中斷
         }
 
         return result;
@@ -56,7 +58,7 @@
         var n = 10;
         
         // debugger;
-        
+        // 中斷點
         var answer = "1 + 2 + 3 + ... + 10 = " + sum1ToN(n);
         
         report.innerHTML = answer;

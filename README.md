@@ -12,3 +12,7 @@ https://zhuanlan.zhihu.com/p/34693209
 
 C語言解法:
 
+
+
+物件導向 組合 繼承
+組合優於繼承

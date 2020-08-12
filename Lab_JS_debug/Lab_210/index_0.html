@@ -52,6 +52,12 @@
         //     $("#report").append("資料有缺<br>");
         //     return;
         // }
+        
+        // 正確：
+        // if (typeof mailAddress === "undefined"){
+        //     $("#report").append("資料有缺<br>");
+        //     return;
+        // }
         $("#report").append(mailAddress.toString() + "<br>");
     }
     

@@ -27,4 +27,35 @@ async function living() {
 
 living();
 
+// async function living () {
+//     var promise1 = happy(200, 2000);
+//     var promise2 = sad(-100, 3000);
+//     result1 = await promise1;
+//     result2 = await promise2;
+
+//     var total = result1 + result2;
+//     console.log("total:",total);
+
+// }
+
+
+// async function living () {
+//     var promise1 = happy ( 200, 2000);
+//     var Promise = sad (-100, 3000);
+//     let [result1 ,result2] =
+//     await Promise.all([promise1,promise2]); 
+
+//     var total = result1 + result2;
+//     console.log("total:",total);
+
+// }
+
+
+
+// async function living() {
+//     let [result1,result2] = 
+//     await Promise.all([happy(200, 2000),sad(-100, 3000)])
+//     var total = result1 + result2;
+//     console.log("total:",total);
+// }
 
